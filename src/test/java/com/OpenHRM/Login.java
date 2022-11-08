@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -61,22 +62,47 @@ public class Login {
 		driver.findElement(By.xpath("//*[@type='submit']")).submit();
 	}
 	
-	@Test(priority=5)
+	/*@Test(priority=5)
 	public void selectAll() {
 	driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/span[1]")).click();	
 	}
+	*/
 	
-	
-	@Test(priority=6)
+	/*@Test(priority=6)
 	public void declineDeleteAll() {
 	WebElement deleteAll=driver.findElement(By.xpath("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/button[1]"));	
 	deleteAll.click();
 	String window= driver.getWindowHandle();
 	driver.switchTo().window(window);
+	driver.findElement(By.xpath("//body/div[@id='app']/div[3]/div[1]/div[1]/div[1]/div[3]/button[1]")).click();
+	Delete all button is below
 	driver.findElement(By.xpath("//body/div[@id='app']/div[3]/div[1]/div[1]/div[1]/div[3]/button[2]")).click();
+	}*/
 	
+	@Test(priority=7)
+	public void deleteSingle() throws InterruptedException {
+		driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[14]/div[1]/div[4]/div[1]/button[1]")).click();
+		String window= driver.getWindowHandle();
+		driver.switchTo().window(window);
+		driver.findElement(By.xpath("//body/div[@id='app']/div[3]/div[1]/div[1]/div[1]/div[3]/button[2]")).click();
+		Thread.sleep(3000);
 	}
-	
+	@Test(priority=8)
+	public void sorting() {
+		WebElement sort =driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/i[1]"));
+		Actions act =  new Actions(driver);
+		act.moveToElement(sort).click().perform();
+		String window2= driver.getWindowHandle();
+		driver.switchTo().window(window2);
+		driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]")).click();
+	}
+	@Test(priority=9)
+	public void edit() {
+		driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/button[2]")).click();
+		WebElement jobTitle =driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/input[1]"));
+		Actions act =  new Actions(driver);
+		act.contextClick(jobTitle).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.RETURN).build().perform();
+	}
 	
 	public void login(String username, String password) {
 		driver.findElement(By.name("username")).sendKeys(username);
