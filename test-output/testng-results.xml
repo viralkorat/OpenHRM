@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13902" started-at="2022-11-07T23:04:51 EST" finished-at="2022-11-07T23:05:05 EST">
+  <suite name="Default suite" duration-ms="19577" started-at="2022-11-08T16:10:28 EST" finished-at="2022-11-08T16:10:48 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13902" started-at="2022-11-07T23:04:51 EST" finished-at="2022-11-07T23:05:05 EST">
+    <test name="Default test" duration-ms="19577" started-at="2022-11-08T16:10:28 EST" finished-at="2022-11-08T16:10:48 EST">
       <class name="com.OpenHRM.Login">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.OpenHRM.Login@10dba097]" name="setup" is-config="true" duration-ms="4957" started-at="2022-11-07T23:04:51 EST" finished-at="2022-11-07T23:04:56 EST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.OpenHRM.Login@2e3fc542]" name="setup" is-config="true" duration-ms="5400" started-at="2022-11-08T16:10:28 EST" finished-at="2022-11-08T16:10:34 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="admin()[pri:1, instance:com.OpenHRM.Login@10dba097]" name="admin" duration-ms="2443" started-at="2022-11-07T23:04:56 EST" finished-at="2022-11-07T23:04:58 EST">
+        <test-method status="PASS" signature="admin()[pri:1, instance:com.OpenHRM.Login@2e3fc542]" name="admin" duration-ms="2544" started-at="2022-11-08T16:10:34 EST" finished-at="2022-11-08T16:10:36 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- admin -->
-        <test-method status="PASS" signature="job()[pri:2, instance:com.OpenHRM.Login@10dba097]" name="job" duration-ms="782" started-at="2022-11-07T23:04:58 EST" finished-at="2022-11-07T23:04:59 EST">
+        <test-method status="PASS" signature="job()[pri:2, instance:com.OpenHRM.Login@2e3fc542]" name="job" duration-ms="723" started-at="2022-11-08T16:10:36 EST" finished-at="2022-11-08T16:10:37 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- job -->
-        <test-method status="PASS" signature="addButton()[pri:3, instance:com.OpenHRM.Login@10dba097]" name="addButton" duration-ms="831" started-at="2022-11-07T23:04:59 EST" finished-at="2022-11-07T23:05:00 EST">
+        <test-method status="PASS" signature="addButton()[pri:3, instance:com.OpenHRM.Login@2e3fc542]" name="addButton" duration-ms="768" started-at="2022-11-08T16:10:37 EST" finished-at="2022-11-08T16:10:38 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addButton -->
-        <test-method status="PASS" signature="addJobTitle()[pri:4, instance:com.OpenHRM.Login@10dba097]" name="addJobTitle" duration-ms="858" started-at="2022-11-07T23:05:00 EST" finished-at="2022-11-07T23:05:01 EST">
+        <test-method status="PASS" signature="addJobTitle()[pri:4, instance:com.OpenHRM.Login@2e3fc542]" name="addJobTitle" duration-ms="841" started-at="2022-11-08T16:10:38 EST" finished-at="2022-11-08T16:10:39 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitle -->
-        <test-method status="PASS" signature="selectAll()[pri:5, instance:com.OpenHRM.Login@10dba097]" name="selectAll" duration-ms="3888" started-at="2022-11-07T23:05:01 EST" finished-at="2022-11-07T23:05:05 EST">
+        <test-method status="PASS" signature="deleteSingle()[pri:7, instance:com.OpenHRM.Login@2e3fc542]" name="deleteSingle" duration-ms="6965" started-at="2022-11-08T16:10:39 EST" finished-at="2022-11-08T16:10:46 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectAll -->
-        <test-method status="PASS" signature="declineDeleteAll()[pri:6, instance:com.OpenHRM.Login@10dba097]" name="declineDeleteAll" duration-ms="93" started-at="2022-11-07T23:05:05 EST" finished-at="2022-11-07T23:05:05 EST">
+        </test-method> <!-- deleteSingle -->
+        <test-method status="PASS" signature="sorting()[pri:8, instance:com.OpenHRM.Login@2e3fc542]" name="sorting" duration-ms="293" started-at="2022-11-08T16:10:46 EST" finished-at="2022-11-08T16:10:46 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- declineDeleteAll -->
+        </test-method> <!-- sorting -->
+        <test-method status="PASS" signature="edit()[pri:9, instance:com.OpenHRM.Login@2e3fc542]" name="edit" duration-ms="2021" started-at="2022-11-08T16:10:46 EST" finished-at="2022-11-08T16:10:48 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edit -->
       </class> <!-- com.OpenHRM.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

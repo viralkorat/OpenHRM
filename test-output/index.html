@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Viral Korat\AppData\Local\Temp\testng-eclipse--1947002378\testng-customsuite.xml</span>
+                    <span>C:\Users\vkorat\AppData\Local\Temp\testng-eclipse--1568191101\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,7 +119,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.OpenHRM.Login" hash-for-method="declineDeleteAll">declineDeleteAll</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.OpenHRM.Login" hash-for-method="deleteSingle">deleteSingle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.OpenHRM.Login" hash-for-method="edit">edit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,7 +134,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.OpenHRM.Login" hash-for-method="selectAll">selectAll</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.OpenHRM.Login" hash-for-method="sorting">sorting</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -173,9 +178,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="declineDeleteAll">
-                  </a> <!-- declineDeleteAll -->
-                  <span class="method-name">declineDeleteAll</span>
+                  <a name="deleteSingle">
+                  </a> <!-- deleteSingle -->
+                  <span class="method-name">deleteSingle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit">
+                  </a> <!-- edit -->
+                  <span class="method-name">edit</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -187,9 +199,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="selectAll">
-                  </a> <!-- selectAll -->
-                  <span class="method-name">selectAll</span>
+                  <a name="sorting">
+                  </a> <!-- sorting -->
+                  <span class="method-name">sorting</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,7 +209,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Viral Korat\AppData\Local\Temp\testng-eclipse--1947002378\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vkorat\AppData\Local\Temp\testng-eclipse--1568191101\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,36 +258,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'selectAll')
+data.setCell(0, 1, 'deleteSingle')
 data.setCell(0, 2, 'com.OpenHRM.Login')
-data.setCell(0, 3, 3888);
+data.setCell(0, 3, 6965);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'admin')
 data.setCell(1, 2, 'com.OpenHRM.Login')
-data.setCell(1, 3, 2443);
+data.setCell(1, 3, 2544);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'addJobTitle')
+data.setCell(2, 1, 'edit')
 data.setCell(2, 2, 'com.OpenHRM.Login')
-data.setCell(2, 3, 858);
+data.setCell(2, 3, 2021);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addButton')
+data.setCell(3, 1, 'addJobTitle')
 data.setCell(3, 2, 'com.OpenHRM.Login')
-data.setCell(3, 3, 831);
+data.setCell(3, 3, 841);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'job')
+data.setCell(4, 1, 'addButton')
 data.setCell(4, 2, 'com.OpenHRM.Login')
-data.setCell(4, 3, 782);
+data.setCell(4, 3, 768);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'declineDeleteAll')
+data.setCell(5, 1, 'job')
 data.setCell(5, 2, 'com.OpenHRM.Login')
-data.setCell(5, 3, 93);
+data.setCell(5, 3, 723);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'sorting')
+data.setCell(6, 2, 'com.OpenHRM.Login')
+data.setCell(6, 3, 293);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -308,27 +324,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">admin</span>
-                <span class="method-start">4973 ms</span>
+                <span class="method-start">5410 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">job</span>
-                <span class="method-start">7419 ms</span>
+                <span class="method-start">7957 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addButton</span>
-                <span class="method-start">8203 ms</span>
+                <span class="method-start">8682 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addJobTitle</span>
-                <span class="method-start">9036 ms</span>
+                <span class="method-start">9451 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">selectAll</span>
-                <span class="method-start">9895 ms</span>
+                <span class="method-name">deleteSingle</span>
+                <span class="method-start">10293 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">declineDeleteAll</span>
-                <span class="method-start">13784 ms</span>
+                <span class="method-name">sorting</span>
+                <span class="method-start">17259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">edit</span>
+                <span class="method-start">17554 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
