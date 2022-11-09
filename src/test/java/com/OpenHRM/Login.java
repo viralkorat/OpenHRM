@@ -1,5 +1,8 @@
 package com.OpenHRM;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.lang.reflect.Array;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -97,11 +100,18 @@ public class Login {
 		driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]")).click();
 	}
 	@Test(priority=9)
-	public void edit() {
+	public void edit() throws AWTException {
 		driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/button[2]")).click();
 		WebElement jobTitle =driver.findElement(By.xpath("//body/div[@id='app']/div[1]/div[2]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[2]/input[1]"));
-		Actions act =  new Actions(driver);
-		act.contextClick(jobTitle).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.RETURN).build().perform();
+		jobTitle.click();
+		
+		Robot rb = new Robot();
+		rb.delay(2000);
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_A);
+		rb.keyPress(KeyEvent.VK_BACK_SPACE);
+		jobTitle.sendKeys("CEO");
+		driver.findElement(By.xpath("//*[@type='submit']")).submit();
 	}
 	
 	public void login(String username, String password) {

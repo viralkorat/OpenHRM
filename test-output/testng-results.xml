@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19577" started-at="2022-11-08T16:10:28 EST" finished-at="2022-11-08T16:10:48 EST">
+  <suite name="Default suite" duration-ms="26831" started-at="2022-11-08T21:35:31 EST" finished-at="2022-11-08T21:35:58 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19577" started-at="2022-11-08T16:10:28 EST" finished-at="2022-11-08T16:10:48 EST">
+    <test name="Default test" duration-ms="26831" started-at="2022-11-08T21:35:31 EST" finished-at="2022-11-08T21:35:58 EST">
       <class name="com.OpenHRM.Login">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.OpenHRM.Login@2e3fc542]" name="setup" is-config="true" duration-ms="5400" started-at="2022-11-08T16:10:28 EST" finished-at="2022-11-08T16:10:34 EST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.OpenHRM.Login@10dba097]" name="setup" is-config="true" duration-ms="7943" started-at="2022-11-08T21:35:31 EST" finished-at="2022-11-08T21:35:39 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="admin()[pri:1, instance:com.OpenHRM.Login@2e3fc542]" name="admin" duration-ms="2544" started-at="2022-11-08T16:10:34 EST" finished-at="2022-11-08T16:10:36 EST">
+        <test-method status="PASS" signature="admin()[pri:1, instance:com.OpenHRM.Login@10dba097]" name="admin" duration-ms="2927" started-at="2022-11-08T21:35:39 EST" finished-at="2022-11-08T21:35:42 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- admin -->
-        <test-method status="PASS" signature="job()[pri:2, instance:com.OpenHRM.Login@2e3fc542]" name="job" duration-ms="723" started-at="2022-11-08T16:10:36 EST" finished-at="2022-11-08T16:10:37 EST">
+        <test-method status="PASS" signature="job()[pri:2, instance:com.OpenHRM.Login@10dba097]" name="job" duration-ms="1154" started-at="2022-11-08T21:35:42 EST" finished-at="2022-11-08T21:35:43 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- job -->
-        <test-method status="PASS" signature="addButton()[pri:3, instance:com.OpenHRM.Login@2e3fc542]" name="addButton" duration-ms="768" started-at="2022-11-08T16:10:37 EST" finished-at="2022-11-08T16:10:38 EST">
+        <test-method status="PASS" signature="addButton()[pri:3, instance:com.OpenHRM.Login@10dba097]" name="addButton" duration-ms="913" started-at="2022-11-08T21:35:43 EST" finished-at="2022-11-08T21:35:44 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addButton -->
-        <test-method status="PASS" signature="addJobTitle()[pri:4, instance:com.OpenHRM.Login@2e3fc542]" name="addJobTitle" duration-ms="841" started-at="2022-11-08T16:10:38 EST" finished-at="2022-11-08T16:10:39 EST">
+        <test-method status="PASS" signature="addJobTitle()[pri:4, instance:com.OpenHRM.Login@10dba097]" name="addJobTitle" duration-ms="1209" started-at="2022-11-08T21:35:44 EST" finished-at="2022-11-08T21:35:45 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addJobTitle -->
-        <test-method status="PASS" signature="deleteSingle()[pri:7, instance:com.OpenHRM.Login@2e3fc542]" name="deleteSingle" duration-ms="6965" started-at="2022-11-08T16:10:39 EST" finished-at="2022-11-08T16:10:46 EST">
+        <test-method status="PASS" signature="deleteSingle()[pri:7, instance:com.OpenHRM.Login@10dba097]" name="deleteSingle" duration-ms="7476" started-at="2022-11-08T21:35:45 EST" finished-at="2022-11-08T21:35:53 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteSingle -->
-        <test-method status="PASS" signature="sorting()[pri:8, instance:com.OpenHRM.Login@2e3fc542]" name="sorting" duration-ms="293" started-at="2022-11-08T16:10:46 EST" finished-at="2022-11-08T16:10:46 EST">
+        <test-method status="PASS" signature="sorting()[pri:8, instance:com.OpenHRM.Login@10dba097]" name="sorting" duration-ms="611" started-at="2022-11-08T21:35:53 EST" finished-at="2022-11-08T21:35:54 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sorting -->
-        <test-method status="PASS" signature="edit()[pri:9, instance:com.OpenHRM.Login@2e3fc542]" name="edit" duration-ms="2021" started-at="2022-11-08T16:10:46 EST" finished-at="2022-11-08T16:10:48 EST">
+        <test-method status="PASS" signature="edit()[pri:9, instance:com.OpenHRM.Login@10dba097]" name="edit" duration-ms="4504" started-at="2022-11-08T21:35:54 EST" finished-at="2022-11-08T21:35:58 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- edit -->
